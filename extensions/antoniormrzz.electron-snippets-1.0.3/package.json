@@ -1,0 +1,45 @@
+{
+	"name": "electron-snippets",
+	"displayName": "Electron Snippets",
+	"author": "Antonio Ramirez",
+	"publisher": "antoniormrzz",
+	"description": "A collection of handy ElectronJS snippets.",
+	"version": "1.0.3",
+	"engines": {
+		"vscode": "^1.50.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"path": "./snippets/snippets.code-snippets"
+			}
+		]
+	},
+	"icon": "icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/antoniormrzz/electron-snippets.git"
+	},
+	"keywords": [
+		"electron",
+		"snippets",
+		"electronjs"
+	],
+	"__metadata": {
+		"id": "88fd8501-2813-4f39-98de-6820a133a1c6",
+		"publisherId": "6adee449-5683-4ce7-8482-c8fa317746cb",
+		"publisherDisplayName": "antoniormrzz",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1741243065770,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 28239
+	}
+}

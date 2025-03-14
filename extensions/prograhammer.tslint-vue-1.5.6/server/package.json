@@ -1,0 +1,31 @@
+{
+  "name": "tslint-server-vue",
+  "version": "0.2.0",
+  "description": "TSLint Linter Server Vue",
+  "engines": {
+    "node": "*"
+  },
+  "private": true,
+  "dependencies": {
+    "minimatch": "^3.0.0",
+    "semver": "^5.1.0",
+    "vscode-languageserver": "^3.4.0",
+    "vscode-uri": "^1.0.1",
+    "vue-parser": "^1.1.5"
+  },
+  "devDependencies": {
+    "@types/minimatch": "^2.0.29",
+    "@types/mocha": "^2.2.45",
+    "@types/node": "^6.0.41",
+    "@types/semver": "^5.3.30",
+    "mocha": "^3.3.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  },
+  "scripts": {
+    "compile": "installServerIntoExtension ../tslint ./package.json ./src/tsconfig.json && tsc -p ./src",
+    "watch": "installServerIntoExtension ../tslint ./package.json ./src/tsconfig.json && tsc --watch -p ./src",
+    "pretest": "tsc -p ./test",
+    "test": "mocha test/out/test"
+  }
+}

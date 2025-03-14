@@ -1,0 +1,111 @@
+{
+	"name": "directory-tree",
+	"displayName": "directory-tree",
+	"publisher": "wn244",
+	"description": "一个根据项目目录自动生成文档树的插件",
+	"version": "1.1.0",
+	"license": "MIT",
+	"keywords": [
+		"tree",
+		"directory",
+		"project tree",
+		"directory tree",
+		"readme"
+	],
+	"engines": {
+		"vscode": "^1.72.0"
+	},
+	"icon": "images/icon.png",
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:directory-tree.getDirectoryStructure"
+	],
+	"main": "./dist/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "directory-tree.getDirectoryStructure",
+				"title": "Directory Tree"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "directory-tree",
+			"properties": {
+				"directoryTree.openREADME": {
+					"type": "boolean",
+					"default": true,
+					"description": "是否在插入目录树后自动打开README文件"
+				},
+				"directoryTree.ignoreGit": {
+					"type": "boolean",
+					"default": true,
+					"description": "是否忽略.git目录"
+				},
+				"directoryTree.supportEmoji": {
+					"type": "boolean",
+					"default": true,
+					"description": "是否在目录中添加文件夹和文件的Emoji"
+				},
+				"directoryTree.theme": {
+					"type": "string",
+					"default": "Linux-Tree",
+					"enum": [
+						"Linux-Tree",
+						"Markdown-List-Nesting"
+					],
+					"enumDescriptions": [
+						"类似于linux下tree命令生成的树形结构",
+						"markdown的列表嵌套格式"
+					]
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run package",
+		"compile": "webpack",
+		"watch": "webpack --watch",
+		"package": "webpack --mode production --devtool hidden-source-map",
+		"compile-tests": "tsc -p . --outDir out",
+		"watch-tests": "tsc -p . -w --outDir out",
+		"pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^8.0.0",
+		"@types/mocha": "^10.0.0",
+		"@types/node": "16.x",
+		"@types/vscode": "^1.72.0",
+		"@typescript-eslint/eslint-plugin": "^5.38.1",
+		"@typescript-eslint/parser": "^5.38.1",
+		"@vscode/test-electron": "^2.1.5",
+		"eslint": "^8.24.0",
+		"glob": "^8.0.3",
+		"mocha": "^10.0.0",
+		"ts-loader": "^9.4.1",
+		"typescript": "^4.8.4",
+		"webpack": "^5.74.0",
+		"webpack-cli": "^4.10.0"
+	},
+	"dependencies": {
+		"ignore": "^5.2.0"
+	},
+	"__metadata": {
+		"id": "a5ce80eb-a1d7-4e2c-a643-d7e6b1a08314",
+		"publisherId": "2f209cd2-4db9-404b-9b25-b621bd5cb5c9",
+		"publisherDisplayName": "wn244",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1741243840719,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 23761
+	}
+}

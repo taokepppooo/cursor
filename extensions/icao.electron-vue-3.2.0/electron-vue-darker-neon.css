@@ -1,0 +1,156 @@
+/* Variable object properties interpolation of vue */
+.mtk4.mtki {
+  color: #ff85a0;
+  text-shadow: 0 0 2px #000, 0 0 10px #f7127d75, 0 0 5px #f7127d75,
+    0 0 25px #f7127d75;
+}
+
+/* Color of function name JS*/
+.mtk7 {
+  /* color: #82aaff; */
+  color: #afc8ff;
+  text-shadow: 0 0 2px #000, 0 0 10px #59a6ffda, 0 0 5px #11b9fc75,
+    0 0 25px #16aaff75;
+}
+
+/* Color of class name JS*/
+.mtk10 {
+  /* color: #fffa9e; */
+  color: #fdf9aa;
+  text-shadow: 0 0 2px #000, 0 0 10px #f86d1c80, 0 0 5px #f86d1c80,
+    0 0 25px #f86d1c80;
+}
+
+/* Color of components tag vue and react JSX*/
+.mtk11 {
+  color: #d6a7f5;
+  text-shadow: 0 0 2px #000, 0 0 10px #f7127d75, 0 0 5px #f7127d75,
+    0 0 25px #f7127d75;
+}
+
+/* Color of inherited-class JS*/
+.mtk13 {
+  color: #98ffba;
+  text-shadow: 0 0 2px #000, 0 0 10px #1af36275, 0 0 5px #1af36275,
+    0 0 25px #1af36275;
+}
+
+/* JavaScript/TypeScript module imports and exports */
+.mtk18 {
+  color: #f1f5ff;
+  text-shadow: 0 0 2px #000, 0 0 3px #2ebdff75, 0 0 5px #8fc3ffda,
+    0 0 8px #8fc3ffda;
+}
+
+/*Color of this JS*/
+.mtk23 {
+  color: #fdd5a9;
+  text-shadow: 0 0 2px #000, 0 0 10px #ff670fee, 0 0 5px #f86d1c80,
+    0 0 25px #f86d1c80;
+}
+
+/* Variable object interpolation of vue */
+.mtk24 {
+  color: #f1f5ff;
+  text-shadow: 0 0 2px #000, 0 0 3px #2ebdff75, 0 0 5px #8fc3ffda,
+    0 0 8px #8fc3ffda;
+}
+
+/* Dosts of changes */
+/* .monaco-workbench .activitybar>.content .monaco-action-bar .badge .badge-content {
+  background: linear-gradient(to bottom, #499ff6 25%, #8c5bff);
+} */
+
+/* Active tab stripe */
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.sizing-fit.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, #79f9b4, #499ff6, #8c5bff) !important;
+  opacity: 1;
+  z-index: 6;
+}
+
+.active-item-indicator::before {
+  display: none;
+}
+
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.sizing-fit::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 0px;
+  transition: opacity 0.5s;
+  opacity: 0;
+  z-index: 6;
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  .monaco-action-bar
+  .action-item.checked::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  width: 2px;
+  background: linear-gradient(to bottom, #79f9b4, #499ff6, #8c5bff) !important;
+  opacity: 1;
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  .monaco-action-bar
+  .action-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+/*Style Tab Active on Terminal*/
+.monaco-workbench
+  .part.panel
+  > .title
+  > .panel-switcher-container
+  > .monaco-action-bar
+  .action-item.checked
+  .action-label {
+  border-bottom: 2px solid;
+  border-image-source: linear-gradient(90deg, #79f9b4, #499ff6, #8c5bff);
+  border-image-slice: 1;
+}
+
+/* Editor Separator */
+/* .monaco-sash.vertical {
+  cursor: ew-resize;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, #79f9b4, #499ff6, #8c5bff) !important;
+} */

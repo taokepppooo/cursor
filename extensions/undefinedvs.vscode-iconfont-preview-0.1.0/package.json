@@ -1,0 +1,55 @@
+{
+	"name": "vscode-iconfont-preview",
+	"displayName": "Iconfont Previewer",
+	"description": "👓 preview your iconfont icon on the gutter",
+	"version": "0.1.0",
+	"repository": {
+		"type": "github",
+		"url": "https://github.com/jasonslyvia/vscode-iconfont-preview"
+	},
+	"publisher": "undefinedvs",
+	"engines": {
+		"vscode": "^1.20.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:scss",
+		"onLanguage:css"
+	],
+	"main": "./out/extension",
+	"icon": "icon.png",
+	"contributes": {},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^9.4.7",
+		"tslint": "^5.8.0",
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.6"
+	},
+	"dependencies": {
+		"node-fetch": "^2.1.1"
+	},
+	"__metadata": {
+		"id": "c19f880a-6513-40c4-9434-1eeaea70a5d2",
+		"publisherId": "50bc286c-539e-4570-ab16-4a0c6d3fde24",
+		"publisherDisplayName": "undefinedvs",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1741243791446,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 304701
+	}
+}

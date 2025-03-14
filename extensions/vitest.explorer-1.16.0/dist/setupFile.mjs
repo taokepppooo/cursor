@@ -1,0 +1,1 @@
+import{inject as i}from"vitest";function n(e,t){if(!e)throw new Error(typeof t=="string"?t:t())}var{watchEveryFile:s,continuousFiles:u,rerunTriggered:a}=i("__vscode"),o=globalThis.__vitest_worker__,r=o.filepath;n(r,"Expected workerState.filepath to be set");a&&!s&&!c()&&(o.config.testNamePattern=/$a/);function c(){return u.some(e=>e===r?!0:e[e.length-1]==="/"?r.startsWith(e):!1)}

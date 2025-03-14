@@ -1,0 +1,63 @@
+{
+	"name": "electron-highlighter",
+	"displayName": "Electron Highlighter Syntax",
+	"description": "Electron highlighter syntax theme from Atom",
+	"version": "1.2.12",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mikemcbride/vscode-electron-highlighter.git"
+	},
+	"bugs": {
+		"url": "https://github.com/mikemcbride/vscode-electron-highlighter/issues",
+		"email": "mike.mcbride@hey.com"
+	},
+	"publisher": "mikemcbride",
+	"engines": {
+		"vscode": "^1.22.0"
+	},
+	"scripts": {
+		"build": "build-theme",
+		"publish": "npm run build && vsce publish"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"theme",
+		"atom",
+		"dark",
+		"one dark",
+		"electron"
+	],
+	"icon": "images/icon.png",
+	"contributes": {
+		"themes": [
+			{
+				"label": "Electron Highlighter",
+				"uiTheme": "vs-dark",
+				"path": "./themes/electron-highlighter-color-theme.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"lodash": "^4.17.19"
+	},
+	"dependencies": {
+		"@two-beards/vscode-theme-builder": "^1.0.0"
+	},
+	"__metadata": {
+		"id": "c8a6df65-41ac-4006-a11d-4120382441df",
+		"publisherId": "5865b7b1-2f2e-4200-b3b8-b60f7c844965",
+		"publisherDisplayName": "mikemcbride",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1741243404652,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 4319902
+	}
+}

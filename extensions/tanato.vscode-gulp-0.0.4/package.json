@@ -1,0 +1,44 @@
+{
+	"name": "vscode-gulp",
+	"displayName": "Gulp Snippets",
+	"description": "Gulp JS Snippets for Visual Studio Code",
+	"version": "0.0.4",
+	"publisher": "tanato",
+	"icon": "images/gulplogo.png",
+	"galleryBanner": {
+		"color": "#cf4646",
+		"theme": "dark"
+	},
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Tanato/vscode-gulp"
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "345e44ca-5c0e-40f7-b15f-8cd6bc650517",
+		"publisherId": "e4452f0e-1c84-494d-b206-9239f3722930",
+		"publisherDisplayName": "tanato",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1741243774512,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 17663
+	}
+}
