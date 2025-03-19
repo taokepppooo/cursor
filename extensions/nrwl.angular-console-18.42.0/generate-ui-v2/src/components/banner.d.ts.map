@@ -1,1 +1,0 @@
-{"version":3,"file":"banner.d.ts","sourceRoot":"","sources":["../../../../../apps/generate-ui-v2/src/components/banner.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,UAAU,EAAQ,MAAM,KAAK,CAAC;;AAIvC,qBACa,MAAO,SAAQ,WAAyB;IACvC,OAAO,SAAM;IACb,IAAI,EAAE,SAAS,GAAG,OAAO,CAAa;IAGlD,OAAO,CAAC,SAAS,CAAS;IAE1B,OAAO,CAAC,OAAO;IAIf,MAAM;IA0BN,SAAS,CAAC,gBAAgB,IAAI,OAAO,GAAG,UAAU;CAGnD"}
